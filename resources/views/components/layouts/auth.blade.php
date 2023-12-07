@@ -34,9 +34,9 @@
                         <div class="col-lg-4 col-md-7">
                             <div class="card border-0 mb-0">
                                 <div class="card-header bg-transparent">
-                                    <h5 class="text-dark text-center mt-2 mb-3">
+                                    <h2 class="text-dark text-center mt-2 mb-1">
                                         {{ $title ?? 'BullStock' }}
-                                    </h5>
+                                    </h2>
                                 </div>
                                 <div class="card-body px-lg-5 pt-0">
                                     {{ $slot }}

@@ -36,6 +36,6 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
-        return response()->noContent();
+        return redirect()->route('dashboard')->with('success', "Bienvenido ${$user->name}");
     }
 }
