@@ -17,7 +17,7 @@ use App\Livewire\Auth\Register;
 
 Route::get('/', function (){
     return redirect()->route('login');
-})->name('dashboard'); 
+})->middleware('auth')->name('dashboard'); 
 
 Route::get('/login', Login::class)->middleware('guest')->name('login');
 Route::get('/register', Register::class)->middleware('guest')->name('register'); 
